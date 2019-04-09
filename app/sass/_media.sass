@@ -1,0 +1,211 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .s
+    &-about
+      &::before
+        width: 42%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .site-header
+    .top-line
+      &-content
+        position: relative
+        .logo
+          font-size: 30px
+    .header-main
+      .header-center
+        .h1
+          font-size: 47px
+        p
+          font-size: 39px
+        .button
+          font-size: 18px
+          padding: 6px 49px
+    .phone
+      .number
+        font-size: 16px
+
+  .s
+    &-about
+      padding: 15px 0
+      .h2
+        text-align: center
+      &::before
+        content: none
+    &-reviews
+      .reviews
+        .review
+          &::before, &::after
+            content: none
+    &-contacts
+      .contacts-text
+        width: 100%
+        position: relative
+        top: 0
+        &-content
+          max-width: 100%
+      #map
+        height: 300px
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .site-header
+    min-height: 400px
+    .top-line
+      &-content
+        position: relative
+        .logo
+          font-size: 25px
+    .header-main
+      .header-center
+        .h1
+          font-size: 42px
+        p
+          font-size: 30px
+          padding-top: 0
+        .button
+          font-size: 15px
+          padding: 6px 32px
+          margin-top: 5px
+          &::after
+            height: 3px
+
+  .h2
+    font-size: 28px
+  .h3
+    font-size: 26px
+
+  .s
+    &-about
+      font-size: 19px
+    &-service
+      .services
+        .service
+          p
+            font-size: 19px
+          .button
+            font-size: 15px
+            padding: 6px 32px
+    &-reviews
+      .reviews
+        .review
+          &-name
+            font-size: 24px
+          &-date
+            font-size: 18px
+          &-text
+            font-size: 19px
+    &-form
+      .connect
+        font-size: 24px
+      form
+        input, select
+          font-size: 23px
+        .button
+          font-size: 17px
+          padding: 9px 40px
+
+@media only screen and (max-width : 767px)
+  .s
+    &-service
+      .services
+        .service
+          &-content-wrap
+            min-height: inherit
+          &-img
+            background-repeat: no-repeat
+            background-position: center bottom
+            margin-bottom: 15px
+            background-size: cover
+            height: 200px
+
+@media only screen and (max-width : 680px)
+  .site-header
+    .header-main
+      .header-center
+        .h1
+          font-size: 35px
+        p
+          font-size: 27px
+
+@media only screen and (max-width : 563px)
+  .site-header
+    .header-main
+      .header-center
+        p
+          font-size: 22px
+          padding-top: 0
+        .button
+          margin-top: 5px
+          font-size: 15px
+          padding: 5px 25px
+          &::after
+            height: 2px
+            
+            
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .site-header
+    .about
+      line-height: .5
+      span, a
+        display: inline-block
+        width: 100%
+      a
+        position: relative
+        top: -5px
+
+  .thanks-wrapper
+    .thanks
+      &-content
+        min-height: 80%
+        &-text
+          .h2
+            font-size: 33px
+          p
+            font-size: 17px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  .s
+    &-service
+      .services
+        .service
+          &-img
+            height: 175px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/
+
